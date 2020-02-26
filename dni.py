@@ -133,7 +133,7 @@ class BackwardInterface(UnidirectionalInterface):
         else:
             return trigger
 
-    def backward(self, trigger, factor=1):
+    def backward(self, trigger, factor=0.5):
         """Backpropagates synthetic gradient from `trigger`.
 
         Computes synthetic gradient based on `trigger`, scales it by `factor`
